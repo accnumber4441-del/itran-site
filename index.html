@@ -6,116 +6,171 @@
   <title>Itran Browser</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/svg+xml" href="assets/icon.svg">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
   <nav class="nav">
     <div class="nav-inner">
-      <a href="/" class="logo">Itran</a>
+      <a href="/" class="logo">
+        <svg width="20" height="20" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="56" stroke="url(#navg)" stroke-width="6" fill="none"/>
+          <path d="M60 30L60 90" stroke="url(#navg)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 60Q60 40 90 60" stroke="url(#navg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M30 60Q60 80 90 60" stroke="url(#navg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="5" fill="url(#navg)"/>
+          <defs><linearGradient id="navg" x1="0" y1="0" x2="120" y2="120"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+        </svg>
+        Itran
+      </a>
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#download">Download</a>
-        <a href="https://itran.app" target="_blank">Itran AI</a>
+        <a href="https://itran.app" target="_blank" class="nav-ai">Itran AI</a>
       </div>
     </div>
   </nav>
 
   <main>
     <section class="hero">
-      <div class="hero-bg"></div>
+      <div class="hero-glow"></div>
+      <div class="hero-glow-2"></div>
       <div class="hero-content">
-        <h1>Welcome to <span class="highlight">Itran</span> Browser</h1>
-        <p class="subtitle">Privacy-first, beautifully simple. Built for clarity.</p>
-        <a href="#download" class="btn-primary">Download</a>
+        <div class="hero-badge">Built on Firefox</div>
+        <h1>The browser that <span class="gradient-text">respects</span> you.</h1>
+        <p class="hero-sub">Privacy-first. Beautiful. Open source.<br>No tracking. No bullshit.</p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-primary">Download for free</a>
+          <a href="#features" class="btn-secondary">See features</a>
+        </div>
+        <div class="hero-os">Available on Windows · macOS · Linux</div>
       </div>
     </section>
 
     <section id="features" class="features">
-      <h2>Why Itran Browser?</h2>
+      <div class="section-label">Features</div>
+      <h2>Everything you need.<br>Nothing you don't.</h2>
       <div class="feature-grid">
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
           </div>
-          <h3>Privacy First</h3>
-          <p>No tracking, no telemetry. Your data stays yours.</p>
+          <h3>No tracking</h3>
+          <p>Zero telemetry. Your data doesn't leave your machine. Period.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8"/><path d="M12 17v4"/></svg>
           </div>
           <h3>Split View</h3>
-          <p>View two tabs side by side. Perfect for research.</p>
+          <p>Two tabs side by side. For research, comparison, or multitasking.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M9 3v18"/></svg>
           </div>
-          <h3>Vertical Tabs</h3>
-          <p>Manage 100+ tabs without losing your mind.</p>
+          <h3>Vertical tabs</h3>
+          <p>100+ tabs? No problem. Side panel keeps you organized.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
           </div>
-          <h3>Fully Customizable</h3>
-          <p>CSS mods, themes, and layouts. Make it yours.</p>
+          <h3>Open source</h3>
+          <p>MPL-2.0 licensed. Transparent. Built on Firefox. Fork it.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></svg>
           </div>
-          <h3>Built-in Ad Blocking</h3>
-          <p>uBlock Origin included. Faster browsing by default.</p>
+          <h3>Ad blocking</h3>
+          <p>uBlock Origin built-in. Pages load faster. No distractions.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83-2.83l.06-.06A1.65 1.65 0 0 0 4.68 15a1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06A1.65 1.65 0 0 0 9 4.68a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06A1.65 1.65 0 0 0 19.4 9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
           </div>
-          <h3>Open Source</h3>
-          <p>MPL-2.0 licensed. Built on Firefox. Transparent.</p>
+          <h3>Customizable</h3>
+          <p>Themes, workspaces, CSS mods. Make the browser yours.</p>
         </div>
       </div>
     </section>
 
     <section id="download" class="download">
-      <h2>Download Itran Browser</h2>
-      <p>Available for Windows, macOS, and Linux.</p>
+      <div class="section-label">Download</div>
+      <h2>Get Itran Browser</h2>
+      <p class="download-sub">Free. Open source. Available everywhere.</p>
       <div class="download-grid">
         <a href="#" class="download-card" data-platform="windows">
-          <span class="platform-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.5v11.5H0V0zm12.5 0H24v11.5H12.5V0zM0 12.5h11.5V24H0V12.5zm12.5 0H24V24H12.5V12.5z"/></svg>
-          </span>
-          <span class="platform-name">Windows</span>
-          <span class="platform-action">Download .exe</span>
+          <div class="dc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.5v11.5H0V0zm12.5 0H24v11.5H12.5V0zM0 12.5h11.5V24H0V12.5zm12.5 0H24V24H12.5V12.5z"/></svg>
+          </div>
+          <div class="dc-info">
+            <span class="dc-name">Windows</span>
+            <span class="dc-action">Download .exe</span>
+          </div>
+          <div class="dc-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </div>
         </a>
         <a href="#" class="download-card" data-platform="macos">
-          <span class="platform-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
-          </span>
-          <span class="platform-name">macOS</span>
-          <span class="platform-action">Download .dmg</span>
+          <div class="dc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.35.07 2.29.74 3.08.8 1.18-.24 2.31-.93 3.57-.84 1.51.12 2.65.72 3.4 1.8-3.12 1.87-2.38 5.98.48 7.13-.57 1.5-1.31 2.99-2.54 4.09zM12.03 7.25c-.15-2.23 1.66-4.07 3.74-4.25.29 2.58-2.34 4.5-3.74 4.25z"/></svg>
+          </div>
+          <div class="dc-info">
+            <span class="dc-name">macOS</span>
+            <span class="dc-action">Download .dmg</span>
+          </div>
+          <div class="dc-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </div>
         </a>
         <a href="#" class="download-card" data-platform="linux">
-          <span class="platform-icon">
-            <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 2.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM12 7c-1.7 0-3 .9-3 2v4c0 1.1.9 2 2 2v5a1 1 0 0 0 2 0v-5c1.1 0 2-.9 2-2V9c0-1.1-1.3-2-3-2z"/></svg>
-          </span>
-          <span class="platform-name">Linux</span>
-          <span class="platform-action">Download .AppImage</span>
+          <div class="dc-icon">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M10.5 2.5a1.5 1.5 0 1 1 3 0 1.5 1.5 0 0 1-3 0zM12 7c-1.7 0-3 .9-3 2v4c0 1.1.9 2 2 2v5a1 1 0 0 0 2 0v-5c1.1 0 2-.9 2-2V9c0-1.1-1.3-2-3-2z"/></svg>
+          </div>
+          <div class="dc-info">
+            <span class="dc-name">Linux</span>
+            <span class="dc-action">Download .AppImage</span>
+          </div>
+          <div class="dc-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 5v14"/><path d="m19 12-7 7-7-7"/></svg>
+          </div>
         </a>
       </div>
-      <p class="download-note">Builds in progress via GitHub Actions. Check back soon.</p>
+      <div class="download-footer">
+        <p>Builds are generated via GitHub Actions.</p>
+        <a href="https://github.com/accnumber4441-del/itran-browser/releases" target="_blank" class="link">All releases →</a>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="cta-glow"></div>
+      <h2>Built with <span class="gradient-text">🜁</span> by<br>the Itran team.</h2>
+      <p>Based on Zen Browser · MPL-2.0 · Open source</p>
+      <div class="cta-links">
+        <a href="https://github.com/accnumber4441-del/itran-browser" target="_blank" class="btn-secondary">GitHub</a>
+        <a href="https://itran.app" target="_blank" class="btn-secondary">Itran AI</a>
+      </div>
     </section>
   </main>
 
   <footer class="footer">
     <div class="footer-inner">
-      <div class="footer-left">
-        <span class="footer-logo">Itran</span>
-        <span class="footer-desc">Ancestral Intelligence</span>
+      <div class="footer-brand">
+        <svg width="16" height="16" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="56" stroke="url(#fg)" stroke-width="6" fill="none"/>
+          <path d="M60 30L60 90" stroke="url(#fg)" stroke-width="3" stroke-linecap="round"/>
+          <path d="M30 60Q60 40 90 60" stroke="url(#fg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <path d="M30 60Q60 80 90 60" stroke="url(#fg)" stroke-width="3" fill="none" stroke-linecap="round"/>
+          <circle cx="60" cy="60" r="5" fill="url(#fg)"/>
+          <defs><linearGradient id="fg" x1="0" y1="0" x2="120" y2="120"><stop offset="0" stop-color="#6366f1"/><stop offset="1" stop-color="#a855f7"/></linearGradient></defs>
+        </svg>
+        Itran Browser
       </div>
       <div class="footer-links">
-        <a href="https://github.com/accnumber4441-del/itran-browser" target="_blank">GitHub</a>
-        <a href="https://itran.app" target="_blank">Itran AI</a>
+        <span class="footer-muted">Ancestral Intelligence</span>
+        <a href="https://github.com/accnumber4441-del/itran-browser">GitHub</a>
+        <a href="https://itran.app">Itran AI</a>
       </div>
     </div>
   </footer>
